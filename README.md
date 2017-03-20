@@ -4,5 +4,13 @@
 ![image](https://github.com/15395401361/Tab-Image/blob/master/TabBarDemoImage/mine.png)
 ![image](https://github.com/15395401361/Tab-Image/blob/master/TabBarDemoImage/next.png)
 ![image](https://github.com/15395401361/Tab-Image/blob/master/TabBarDemoImage/next2.png)
+# * If you feel good, please give me a star, thank you very much! ⭐️
+
+# > I will keep update with new Issue, if you want to know my progress at any time, please click on the `watch` button in the upper right corner!
+
+
+#**⚠️ NOTE: It doesn't support Storyboard for the time being!**
 
 # 心有猛虎，细嗅蔷薇
+
+
