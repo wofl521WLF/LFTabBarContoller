@@ -24,7 +24,6 @@ class HomeViewController: UIViewController {
     }
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        self.tabBarController?.tabBar.isHidden = true
     }
 
     func createUI( ){
@@ -41,6 +40,7 @@ class HomeViewController: UIViewController {
         let newVc:NextOne = NextOne.init()
         newVc.navigationItem.title = "这是第一个新页面哈哈哈"
         newVc.view.backgroundColor = UIColor.gray
+        self.tabBarController?.tabBar.isHidden = true
         self.navigationController?.pushViewController(newVc, animated: true)
     }
 
