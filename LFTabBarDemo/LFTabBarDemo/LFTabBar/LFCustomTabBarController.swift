@@ -68,7 +68,7 @@ class LFCustomTabBarController: UITabBarController {
         }
         self.selectedIndex = 0
         let nav:UINavigationController = self.objectNavis[0]
-        nav.popToRootViewController(animated: false)
+        nav.popToRootViewController(animated: true)
     }
     
     //其他页面调用选择按钮
@@ -96,7 +96,7 @@ class LFCustomTabBarController: UITabBarController {
              */
             if self.objectNavis.count > 0{
                 //此处需要将其转为具有导航功能的navigationController
-                (self.selectedViewController as! UINavigationController).popToRootViewController(animated: false)
+                (self.selectedViewController as! UINavigationController).popToRootViewController(animated: true)
             }
         }
     

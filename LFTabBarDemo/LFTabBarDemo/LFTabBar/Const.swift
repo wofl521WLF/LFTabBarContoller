@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 let version:NSString = UIDevice.current.systemVersion as NSString
-
+let shareAppdelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
 let kIOS7 = version.floatValue >= 7.0 ? 1 : 0
 let kIOS8 = version.floatValue >= 8.0 ? 1 : 0
 

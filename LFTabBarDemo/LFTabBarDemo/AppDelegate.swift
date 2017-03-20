@@ -14,18 +14,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     lazy var tabBarController:LFCustomTabBarController = {
         var tab:LFCustomTabBarController = LFCustomTabBarController()
-        let homeVC:UIViewController = UIViewController()
-        homeVC.view.backgroundColor = UIColor.red
-        let friendsVC:UIViewController = UIViewController()
-        friendsVC.view.backgroundColor = UIColor.yellow
-        let minevc:UIViewController = UIViewController()
-        minevc.view.backgroundColor = UIColor.gray
+        let homeVC:HomeViewController = HomeViewController()
+        let friendsVC:FriendsViewController = FriendsViewController()
+        let minevc:MineViewController = MineViewController()
         let nav1:UINavigationController = UINavigationController.init(rootViewController: homeVC)
-        homeVC.navigationItem.title = "首页"
         let nav2:UINavigationController = UINavigationController.init(rootViewController: friendsVC)
-        friendsVC.navigationItem.title = "联系人"
         let nav3:UINavigationController = UINavigationController.init(rootViewController: minevc)
-        minevc.navigationItem.title = "个人中心"
         let arr = NSArray.init(array: [nav1,nav2,nav3])
         tab.viewControllers = arr.mutableCopy() as! [UINavigationController]
         tab.selectedIndex=0;

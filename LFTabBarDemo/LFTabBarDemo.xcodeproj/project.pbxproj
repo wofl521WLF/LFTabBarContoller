@@ -35,6 +35,11 @@
 		096FD4071E7FD2700082077D /* badge_more@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 096FD4031E7FD2700082077D /* badge_more@3x.png */; };
 		096FD4081E7FD2700082077D /* badge_one@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 096FD4041E7FD2700082077D /* badge_one@2x.png */; };
 		096FD4091E7FD2700082077D /* badge_one@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 096FD4051E7FD2700082077D /* badge_one@3x.png */; };
+		096FD40D1E7FDDA80082077D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096FD40C1E7FDDA80082077D /* HomeViewController.swift */; };
+		096FD40F1E7FDDB80082077D /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096FD40E1E7FDDB80082077D /* FriendsViewController.swift */; };
+		096FD4111E7FDDBF0082077D /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096FD4101E7FDDBF0082077D /* MineViewController.swift */; };
+		096FD4131E7FDE9D0082077D /* NextOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096FD4121E7FDE9D0082077D /* NextOne.swift */; };
+		096FD4151E7FDEAD0082077D /* NextTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096FD4141E7FDEAD0082077D /* NextTwo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +94,11 @@
 		096FD4031E7FD2700082077D /* badge_more@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "badge_more@3x.png"; sourceTree = "<group>"; };
 		096FD4041E7FD2700082077D /* badge_one@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "badge_one@2x.png"; sourceTree = "<group>"; };
 		096FD4051E7FD2700082077D /* badge_one@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "badge_one@3x.png"; sourceTree = "<group>"; };
+		096FD40C1E7FDDA80082077D /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		096FD40E1E7FDDB80082077D /* FriendsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
+		096FD4101E7FDDBF0082077D /* MineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
+		096FD4121E7FDE9D0082077D /* NextOne.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextOne.swift; sourceTree = "<group>"; };
+		096FD4141E7FDEAD0082077D /* NextTwo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextTwo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +149,7 @@
 		096FD3AB1E7FADCA0082077D /* LFTabBarDemo */ = {
 			isa = PBXGroup;
 			children = (
+				096FD40B1E7FDD840082077D /* ViewController */,
 				096FD3DA1E7FAE010082077D /* LFTabBar */,
 				096FD3AC1E7FADCA0082077D /* AppDelegate.swift */,
 				096FD3B31E7FADCA0082077D /* Assets.xcassets */,
@@ -202,6 +213,18 @@
 				096FD3F31E7FD2390082077D /* TabBarEdgeImage@3x.png */,
 			);
 			path = Image;
+			sourceTree = "<group>";
+		};
+		096FD40B1E7FDD840082077D /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				096FD40C1E7FDDA80082077D /* HomeViewController.swift */,
+				096FD40E1E7FDDB80082077D /* FriendsViewController.swift */,
+				096FD4101E7FDDBF0082077D /* MineViewController.swift */,
+				096FD4121E7FDE9D0082077D /* NextOne.swift */,
+				096FD4141E7FDEAD0082077D /* NextTwo.swift */,
+			);
+			name = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -355,12 +378,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				096FD40F1E7FDDB80082077D /* FriendsViewController.swift in Sources */,
 				096FD3AD1E7FADCA0082077D /* AppDelegate.swift in Sources */,
+				096FD4111E7FDDBF0082077D /* MineViewController.swift in Sources */,
 				096FD3E11E7FAEAD0082077D /* UIColor+Ext.swift in Sources */,
 				096FD3DE1E7FAE770082077D /* LFCustomTabBarController.swift in Sources */,
 				096FD3E21E7FAEAD0082077D /* UIImage+Exe.swift in Sources */,
+				096FD4151E7FDEAD0082077D /* NextTwo.swift in Sources */,
 				096FD3DC1E7FAE3B0082077D /* LFCustomButtonItem.swift in Sources */,
+				096FD40D1E7FDDA80082077D /* HomeViewController.swift in Sources */,
 				096FD3E41E7FBCB50082077D /* Const.swift in Sources */,
+				096FD4131E7FDE9D0082077D /* NextOne.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
