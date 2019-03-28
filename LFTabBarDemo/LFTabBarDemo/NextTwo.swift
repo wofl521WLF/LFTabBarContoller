@@ -18,16 +18,16 @@ class NextTwo: UIViewController {
     
     func createUI( ){
         
-        let btn:UIButton = UIButton.init(type: UIButtonType.custom)
+        let btn:UIButton = UIButton.init(type: UIButton.ButtonType.custom)
         btn.frame = CGRect.init(x: 50, y: 100, width: 100, height: 100)
-        btn.setTitle("点我回首页", for: UIControlState.normal)
-        btn.addTarget(self, action: #selector(clickToHome(_:)), for: UIControlEvents.touchUpInside)
+        btn.setTitle("点我回首页", for: UIControl.State.normal)
+        btn.addTarget(self, action: #selector(clickToHome(_:)), for: UIControl.Event.touchUpInside)
         btn.backgroundColor = UIColor.red
         self.view.addSubview(btn)
     }
     
     //点击模拟通过TabBar回首页
-    func clickToHome(_ btn:UIButton){
+    @objc func clickToHome(_ btn:UIButton){
        shareAppdelegate.tabBarController.pushToHome()
     }
 

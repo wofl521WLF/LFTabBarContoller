@@ -24,15 +24,15 @@ class NextOne: UIViewController {
     
     func createUI( ){
         
-        let btn:UIButton = UIButton.init(type: UIButtonType.custom)
+        let btn:UIButton = UIButton.init(type: UIButton.ButtonType.custom)
         btn.frame = CGRect.init(x: 100, y: 200, width: 100, height: 100)
-        btn.setTitle("点我", for: UIControlState.normal)
-        btn.addTarget(self, action: #selector(clickNextPage(_:)), for: UIControlEvents.touchUpInside)
+        btn.setTitle("点我", for: UIControl.State.normal)
+        btn.addTarget(self, action: #selector(clickNextPage(_:)), for: UIControl.Event.touchUpInside)
         btn.backgroundColor = UIColor.red
         self.view.addSubview(btn)
     }
     
-    func clickNextPage(_ btn:UIButton){
+    @objc func clickNextPage(_ btn:UIButton){
         let newVc:NextTwo = NextTwo.init()
         newVc.navigationItem.title = "这是第二个新页面"
         newVc.view.backgroundColor = UIColor.gray
