@@ -14,6 +14,7 @@ class MineViewController: UIViewController {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.gray
         self.navigationItem.title = "个人中心"
+        NSLog("大幅度发", "ddd");
         // Do any additional setup after loading the view.
     }
 
